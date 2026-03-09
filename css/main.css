@@ -10,13 +10,16 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
 
+html,body{
+  margin: 0;
+  padding: 0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -92,8 +95,10 @@ html{
 }
 
 .container{
-    max-width: 1024px;
+    width: 95%;
     margin: 0 auto;
+    padding-top: 15px;
+    display: flex;
 }
 
 .form-group{
@@ -110,10 +115,94 @@ label{
 .form-input{
     width: 600px;
 }
+/*
+================================
+navigation 
+================================
+*/
+nav{
+  width: 95px;
+  height: 700px;
+  background: #2C5F4E;
+  border-radius: 23px;
 
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 30% 14%;
+  justify-content: center;
+  align-items: center;
 
+  box-shadow: 1px 1px 10px #0d892e;
+}
+.nav-element{
+  width: 54%;
+  height: 50px;
+  border-radius: 100px;
+  background: #3e8069;
+  margin: 0 auto;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.nav-element:hover{
+  transform: scale(1.08);
+  background-color: #65ca80;
+}
+.active{
+  background: #71cc8a;
+  box-shadow: 0px 2px 15px #71cc8a;
+}
+.active svg path{
+  stroke: #000;
+}
+svg{
+  margin: 0 auto;
+}
+.pp{
+  overflow: hidden;
+  border: 3px solid #3e8069;
+}
+.profile-picture{
+  max-width: 55px;
+  height: auto;
+}
+
+/*
+================================
+Main
+================================
+ */
+
+main{
+  width: 95%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+}
+.greetings{
+  padding: 30px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 45px 10px;
+}
+.greetings h3{
+  color: #999;
+}
+.main-title{
+  margin-top: 50px;
+  margin-left: 200px;
+  text-decoration: underline;
+}
+.circles{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -287,4 +376,3 @@ label{
     page-break-after: avoid;
   }
 }
-
