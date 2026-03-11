@@ -43,6 +43,7 @@
                     <textarea placeholder="Type your description here ..." name="description"></textarea>
                     <input id="create-submit" class="form-submit" type="submit" value="Submit">
                 </form>
+                <img  width="400px" src="img/logo-big-fill-only.png" alt="">
             </div>
         </main>
     </div>
