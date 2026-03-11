@@ -18,15 +18,13 @@
         <?php $activePage = 'registration'; require_once "templates/nav.php" ?>
         <main id="reg" class="registration">
             <div class="registration-block">
-                <h1 class="regh">Registration</h1>
+                <h1 class="regh">Log in</h1>
                 <form class="registration-form" action="">
                     <label for="email">E-mail:</label>
                     <input type="email" placeholder="example@gmail.com" name="email">
                     <label for="password">Password:</label>
                     <input type="password" name="password" placeholder="pass123">
-                    <label for="password_check">Password Check:</label>
-                    <input type="password" name="password_check" placeholder="pass123">
-                    <input type="submit" name="submit" value="Sign Up" class="form-submit">
+                    <input type="submit" name="submit" value="Log in" class="form-submit">
                 </form>
                 <?php require_once "templates/const.php"?>
             </div>
