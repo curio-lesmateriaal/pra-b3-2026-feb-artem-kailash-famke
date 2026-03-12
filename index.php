@@ -32,9 +32,7 @@
                 <div class="kanban-element to-do">
                     <div class="kanban-element-header">
                         <h1>To Do</h1>
-                        <div class="dots">
-                            <?php require 'templates/dots.php' ?>
-                        </div>
+                        <a href="edit.php"><div class="dots"> <?php require 'templates/dots.php' ?> </div></a>
                     </div>
                     <div class="kanban-element-main">
 
@@ -53,9 +51,11 @@
                         <div class="card-counter">
                             <p>0/3</p>
                         </div>
+                        <a href="edit.php">
                         <div class="dots">
                             <?php require 'templates/dots.php' ?>
                         </div>
+                        </a>
                     </div>
                     <div class="kanban-element-main">
 
@@ -71,9 +71,11 @@
                 <div class="kanban-element done">
                     <div class="kanban-element-header">
                         <h1>Done</h1>
+                        <a href="edit.php">
                         <div class="dots">
                             <?php require 'templates/dots.php' ?>
                         </div>
+                        </a>
                     </div>
                     <div class="kanban-element-main">
 

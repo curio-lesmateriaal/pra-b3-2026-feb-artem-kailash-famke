@@ -18,10 +18,10 @@
     <div class="container">
         <?php require_once "templates/nav.php" ?>
         <main id="edit">
-            <h1 class="repo-name">Create new issue in curio-lesmateriaal/pra-b3-2026-feb-artem-kailash-famke</h1>
+            <h1 class="repo-name">Edit issue in curio-lesmateriaal/pra-b3-2026-feb-artem-kailash-famke</h1>
             <div class="create-block">
                 <form class="create-form" action="">
-                    <label for="title">Add a Title:</label>
+                    <label for="title">Edit Title:</label>
                     <input placeholder="Title" type="text" name="title">
                     <div class="select-area">
                         <label for="afdeling">Afdeling</label>
@@ -39,10 +39,11 @@
                             <option value="nee">Ja</option>
                         </select>
                     </div>
-                    <label for="description">Add a description:</label>
+                    <label for="description">Edit description:</label>
                     <textarea placeholder="Type your description here ..." name="description"></textarea>
                     <input id="create-submit" class="form-submit" type="submit" value="Submit">
                 </form>
+                <img  width="400px" src="img/logo-big-fill-only.png" alt="">
             </div>
         </main>
     </div>
