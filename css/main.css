@@ -217,9 +217,8 @@ main {
     color: #999;
 }
 .main-title {
-    margin-top: 50px;
+    margin-top: -75px;
     margin-left: 200px;
-    text-decoration: underline;
 }
 .circles {
     position: absolute;
@@ -297,6 +296,14 @@ main {
     color: white;
     left: 200px;
     top: 7%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.none {
+    color: #000000;
 }
 
 /*
@@ -416,6 +423,14 @@ textarea{
 .hidden,
 [hidden] {
     display: none !important;
+}
+
+.hidden1 {
+    display: none;
+}
+
+.hidden1.show {
+    display: block; 
 }
 
 /*
