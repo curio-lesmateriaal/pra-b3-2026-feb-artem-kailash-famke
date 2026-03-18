@@ -41,7 +41,7 @@
                     </div>
                     <label for="description">Add a description:</label>
                     <textarea placeholder="Type your description here ..." name="description"></textarea>
-                    <input id="create-submit" class="form-submit" type="submit" value="Submit">
+                    <input id="create-submit" class="form-submit" type="submit" value="create">
                 </form>
             </div>
         </main>
