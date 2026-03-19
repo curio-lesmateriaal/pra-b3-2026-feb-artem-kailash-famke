@@ -20,7 +20,7 @@
         <main id="edit">
             <h1 class="repo-name">Create new issue in curio-lesmateriaal/pra-b3-2026-feb-artem-kailash-famke</h1>
             <div class="create-block">
-                <form class="create-form" action="<?php echo $base_url; ?>/app/Http/Controllers/meldingenController.php" method="POST">
+                <form class="create-form" action="<?php echo $base_url; ?>/app/Http/Controllers/takenController.php" method="POST">
                     <label for="title">Add a Title:</label>
                     <input placeholder="Title" type="text" name="title">
                     <div class="select-area">
