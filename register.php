@@ -19,13 +19,13 @@
         <main id="reg" class="registration">
             <div class="registration-block">
                 <h1 class="regh">Registration</h1>
-                <form class="registration-form" action="">
+                <form class="registration-form" action="/app/Http/controller/registerController.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="name" placeholder="Viktor Vector" name="name">
                     <label for="email">E-mail:</label>
-                    <input type="email" placeholder="example@gmail.com" name="email">
+                    <input type="text" placeholder="example@gmail.com" name="email">
                     <label for="password">Password:</label>
                     <input type="password" name="password">
-                    <label for="password_check">Password Check:</label>
-                    <input type="password" name="password_check">
                     <input type="submit" name="submit" value="Sign Up" class="form-submit">
                 </form>
                 <?php require_once "templates/const.php"?>
