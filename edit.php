@@ -41,9 +41,9 @@
                     </div>
                     <label for="description">Add a description:</label>
                     <textarea placeholder="Type your description here ..." name="description"></textarea>
-                    <input id="create-submit" name="action" class="form-submit" type="submit" value="Submit">
+                    <input id="edit-submit" name="action" class="form-submit" type="submit" value="Submit">
+                    <input id="delete-submit" name="action" class="form-submit" type="submit" value="Delete">
                 </form>
-                <img  width="400px" src="img/logo-big-fill-only.png" alt="">
             </div>
         </main>
     </div>
