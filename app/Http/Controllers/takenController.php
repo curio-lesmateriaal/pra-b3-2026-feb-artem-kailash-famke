@@ -17,7 +17,7 @@ if($action == "create"){
     $status = //TODO: status;
     $deadline = $_POST['deadline'];
     $user_id = $_SESSION['user_id'];
-    $created_at = date('Y-m-d H:i:s')
+    $created_at = //TODO: created_at;
 
     //validatie
 
@@ -51,7 +51,7 @@ if($action == "create"){
     $status = //TODO: status;
     $deadline = $_POST['deadline'];
     $user_id = $_SESSION['user_id'];
-    $created_at = date('Y-m-d H:i:s')
+    $created_at = //TODO: created_at;
 
     require_once '../../../backend/conn.php';
 
