@@ -192,6 +192,11 @@ svg {
 .username {
     transition: visibility 1s ease;
 }
+
+.darkmode {
+ /*darkmode styling*/
+}
+
 /*
 ================================
 Main

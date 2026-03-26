@@ -4,6 +4,7 @@
 <head>
     <title></title>
     <?php require_once 'templates/head.php'; ?>
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
 </head>
 
 <body>
