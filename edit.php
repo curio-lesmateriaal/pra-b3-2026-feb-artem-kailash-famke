@@ -39,7 +39,7 @@
                             <option value="nee">Ja</option>
                         </select>
                     </div>
-                    <label for="description">Edit description:</label>
+                    <label for="beschrijving">Edit description:</label>
                     <textarea placeholder="Type your description here ..." name="description"></textarea>
                     <input id="edit-submit" name="action" class="form-submit" type="submit" value="Submit">
                     <input id="delete-submit" name="action" class="form-submit" type="submit" value="Delete">

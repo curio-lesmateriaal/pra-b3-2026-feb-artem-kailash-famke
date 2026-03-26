@@ -16,8 +16,8 @@ if($action == "create"){
     }
     $status = //TODO: status;
     $deadline = $_POST['deadline'];
-    $user_id = //TODO: user;
-    $created_at = //TODO: created_at;
+    $user_id = $_SESSION['user_id'];
+    $created_at = date('Y-m-d H:i:s')
 
     //validatie
 
@@ -39,19 +39,19 @@ if($action == "create"){
         ':created_at' => $created_at
     ]);
 
-    header("Location: $base_url/index.php");
+    header("Location: ../../../index.php");
 
 
 } elseif($action == "edit"){
     
     //variabelen
     $title = $_POST['title'];
-    $$beschrijving = $_POST['beschrijving'];
+    $beschrijving = $_POST['beschrijving'];
     $afdeling = $_POST['afdeling'];
     $status = //TODO: status;
     $deadline = $_POST['deadline'];
-    $user_id = //TODO: user;
-    $created_at = //TODO: created_at;
+    $user_id = $_SESSION['user_id'];
+    $created_at = date('Y-m-d H:i:s')
 
     require_once '../../../backend/conn.php';
 
@@ -81,6 +81,6 @@ if($action == "create"){
         ':id' => $_POST['id']
     ]);
 
-    header("Location: $base_url/index.php");
+    header("Location: ../../../index.php");
 
 }
