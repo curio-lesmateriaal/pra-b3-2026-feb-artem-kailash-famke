@@ -25,7 +25,7 @@
                     <input placeholder="Title" type="text" name="title">
                     <div class="select-area">
                         <label for="afdeling">Afdeling</label>
-                        <label for="frioriteit">Prioriteit</label>
+                        <label for="prioriteit">Prioriteit</label>
                         <select name="afdeling">
                             <option value="personeel">Personeel</option>
                             <option value="horeca">Horeca</option>
