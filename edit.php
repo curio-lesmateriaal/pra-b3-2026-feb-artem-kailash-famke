@@ -25,7 +25,7 @@
                     <input placeholder="Title" type="text" name="title">
                     <div class="select-area">
                         <label for="afdeling">Afdeling</label>
-                        <label for="frioriteit">Prioriteit</label>
+                        <label for="status">Status</label>
                         <select name="afdeling">
                             <option value="personeel">Personeel</option>
                             <option value="horeca">Horeca</option>
@@ -34,15 +34,16 @@
                             <option value="klantenservice">Klantenservice</option>
                             <option value="groen">Groen</option>
                         </select>
-                        <select name="prioriteit">
-                            <option value="ja">Nee</option>
-                            <option value="nee">Ja</option>
+                        <select name="Status">
+                            <option value="todo">To Do</option>
+                            <option value="nee">In progress</option>
+                            <option value="nee">Done</option>
                         </select>
                     </div>
                     <label for="description">Edit description:</label>
                     <textarea placeholder="Type your description here ..." name="description"></textarea>
-                    <input id="edit-submit" name="action" class="form-submit" type="submit" value="Submit">
-                    <input id="delete-submit" name="action" class="form-submit" type="submit" value="Delete">
+                    <input id="edit-submit" name="action" class="pointer form-submit" type="submit" value="Submit">
+                    <input id="delete-submit" name="action" class="pointer form-submit" type="submit" value="Delete">
                 </form>
                 <img  width="400px" src="img/logo-big-fill-only.png" alt="">
             </div>

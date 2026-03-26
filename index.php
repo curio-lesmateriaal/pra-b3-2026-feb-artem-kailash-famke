@@ -38,7 +38,7 @@
                 <div class="kanban-element to-do">
                     <div class="kanban-element-header">
                         <h1>To Do</h1>
-                        <div class="dots pointer">
+                        <div class="dots">
                             <?php require 'templates/dots.php' ?>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                         <!-- <div class="card-counter">  -->
                         <!-- <p>0/3</p> -->
                         <!-- </div>  -->
-                        <div class="dots pointer">
+                        <div class="dots">
                             <?php require 'templates/dots.php' ?>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                 <div class="kanban-element done">
                     <div class="kanban-element-header">
                         <h1>Done</h1>
-                        <div class="dots pointer">
+                        <div class="dots">
                             <?php require 'templates/dots.php' ?>
                         </div>
                     </div>
@@ -100,8 +100,7 @@
                         <?php foreach ($takenlijst as $taken) ?>
                         <?php if ($taken['status'] == 'done'): ?>
                             <div class="card">
-                                <h2><a class="none" href="edit.php?id=<?php echo $taken['id'] ?>"><?= $taken['titel'] ?></a>
-                                </h2>
+                                <h2><a class="none" href="edit.php?id=<?php echo $taken['id'] ?>"><?= $taken['titel'] ?></a></h2>
                                 <p><?= $taken['beschrijving'] ?></p>
                             </div>
                         <?php endif; ?>
