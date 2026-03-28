@@ -1,10 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
-    $msg = "Je moet eerst inloggen!";
-    header("Location: ../../../login.php?msg=$msg");
-    exit;
-}
+// if (!isset($_SESSION['user_id'])) {
+//     $msg = "Je moet eerst inloggen!";
+//     header("Location: ../../../login.php?msg=$msg");
+//     exit;
+// }
 ?>
 <!doctype html>
 <html lang="nl">
@@ -32,12 +32,12 @@ if (!isset($_SESSION['user_id'])) {
         require_once 'templates/nav.php' ?>
         <main>
             <div class="greetings">
-                <?php if(isset($_SESSION['user_id'])): ?>
-                <h1>Hello, <?php echo $_SESSION['username'] ?>!👋</h1>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <h1>Hello, <?php echo $_SESSION['name'] ?>!👋</h1>
                 <?php endif ?>
                 <h1></h1>
                 <h3 class="greetings-quest">What do you want to do today?</h3>
-                <h1 class="main-title">DevLand</h1>
+                
             </div>
             <div class="kanban">
                 <div class="kanban-element to-do">
@@ -48,7 +48,13 @@ if (!isset($_SESSION['user_id'])) {
                         </div>
                     </div>
                     <div class="kanban-element-main">
-                        <?php require 'templates/task.php'?>
+                        <?php require 'templates/task.php' ?>
+                        <?php require 'templates/task.php' ?>
+                        <?php require 'templates/task.php' ?>
+                        <?php require 'templates/task.php' ?>
+                        <?php require 'templates/task.php' ?>
+                        <?php require 'templates/task.php' ?>
+                        <?php require 'templates/task.php' ?>
                     </div>
                     <div class="kanban-element-footer">
                         <a class="create-butt" href="create.php">
@@ -60,10 +66,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
                 <div class="kanban-element in-progress">
                     <div class="kanban-element-header">
-                        <h1>In Progress</h1>
-                        <div class="card-counter">
-                            <p>0/3</p>
-                        </div>
+                            <h1>In Progress</h1>
                         <div class="dots">
                             <?php require 'templates/dots.php' ?>
                         </div>

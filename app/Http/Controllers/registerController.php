@@ -19,5 +19,5 @@
     $statement = $conn->prepare($query);
     $statement->execute([':name' => $name ,':email' => $email, ':hash' => $hashed_pass]);
 
-    header('Location: /index.php');
+    header('Location: /login.php');
 ?>

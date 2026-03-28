@@ -1,10 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
-    $msg = "Je moet eerst inloggen!";
-    header("Location: ../../../login.php?msg=$msg");
-    exit;
-}
+// if (!isset($_SESSION['user_id'])) {
+//     $msg = "Je moet eerst inloggen!";
+//     header("Location: ../../../login.php?msg=$msg");
+//     exit;
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,11 @@ if (!isset($_SESSION['user_id'])) {
         require_once "templates/nav.php" ?>
         <main id="reg" class="registration">
             <div class="profile-block">
-                
+                <form action="/app/Http/Controllers/logoutController.php">
+                    <button class="form-sumbit">
+                        Log Out
+                    </button>
+                </form>
             </div>
         </main>
     </div>

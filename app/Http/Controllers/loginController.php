@@ -17,9 +17,8 @@ if ($statement->rowCount() < 1) {
 if (!password_verify($password, $user['password'])) {
     echo 'Wachtwoord niet juist!';
 }
-
 $_SESSION['user_id'] = $user['id'];
 $_SESSION['username'] = $user['username'];
-
+$_SESSION['name'] = $user['naam'];
 
 header('Location: /index.php');
