@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    $msg = "Je moet eerst inloggen!";
+    header("Location: ../../../login.php?msg=$msg");
+    exit;
+}
+?>
 <!doctype html>
 <html lang="nl">
 
@@ -24,7 +32,9 @@
         require_once 'templates/nav.php' ?>
         <main>
             <div class="greetings">
-                <h1>Hello, Artem Shunda!👋</h1>
+                <?php if(isset($_SESSION['user_id'])): ?>
+                <h1>Hello, <?php echo $_SESSION['username'] ?>!👋</h1>
+                <?php endif ?>
                 <h1></h1>
                 <h3 class="greetings-quest">What do you want to do today?</h3>
                 <h1 class="main-title">DevLand</h1>
@@ -38,7 +48,7 @@
                         </div>
                     </div>
                     <div class="kanban-element-main">
-
+                        <?php require 'templates/task.php'?>
                     </div>
                     <div class="kanban-element-footer">
                         <a class="create-butt" href="create.php">
@@ -77,7 +87,6 @@
                         </div>
                     </div>
                     <div class="kanban-element-main">
-
                     </div>
                     <div class="kanban-element-footer">
                         <a class="create-butt" href="create.php">

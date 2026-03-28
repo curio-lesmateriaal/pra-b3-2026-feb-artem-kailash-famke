@@ -6,12 +6,12 @@
     $password = $_POST['password'];
     // $password_check = $_POST['password_check'];
 
-    if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-        die('Email is ongeldig!');
-    }
-    if(empty($password)){
-        die('Vul eerst je wachtwoord in!');
-    }
+    // if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+    //     die('Email is ongeldig!');
+    // }
+    // if(empty($password)){
+    //     die('Vul eerst je wachtwoord in!');
+    // }
 
     $hashed_pass = password_hash($password, PASSWORD_DEFAULT);
 
